@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="logo">Mostafa</div>
+
+      <div class="menu">
+        <ul class="nav-links">
+          <li><a href="#homepage">Home</a></li>
+          <li><a href="#about-page">About</a></li>
+          <li><a href="#services-page">Services</a></li>
+          <li><a href="#portfolio-page">Portfolio</a></li>
+          <li><a href="#blog-page">Blog</a></li>
+          <li><a href="#contact-page">Contact</a></li>
+        </ul>
+
+        <button class="nav-menu"><i class="bi bi-list"></i></button>
+      </div>
+    </nav>
+
+    <!-- homepage -->
+    <section class="homepage section" id="homepage">
+      <!-- to be on the background z-index = 1 -->
+      <div class="homepage-bg">
+        <img
+          src="./assets/domenico-loia-hGV2TfOh0ns-unsplash.jpg"
+          alt="background-img"
+        />
+      </div>
+
+      <!-- the overlay for the transperancy between the img and the content z-index = 2 -->
+      <div class="bg-overley"></div>
+
+      <!-- the content z-index = 3 -->
+      <div class="homepage-content">
+        <h3 class="greeting">Hi, I'm</h3>
+        <h1>Mostafa Atef</h1>
+        <p class="typing">professional Web <span></span></p>
+      </div>
+    </section>
+
+    <!-- about page -->
+    <section class="about-page section" id="about-page">
+      <div class="work-img">
+        <div class="work-img-border">
+          <img src="./assets/work-7.jpg" alt="work" />
+          <div class="img-overlay">
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-google"></i></a>
+            <a href=""><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-info">
+        <div class="about-txt">
+          <h1>Hello,</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+            odio itaque. Quis fuga et id quisquam aliquam rem? Voluptatem est
+            reiciendis rem magnam fuga inventore sed? Ab sed ex porro.
+          </p>
+        </div>
+
+        <ul class="about-personal">
+          <li><span>Name: </span>Mostafa Atef</li>
+          <li><span>Age: </span>22 Years</li>
+          <li><span>Freelance: </span>Availble</li>
+          <li><span>Job Title: </span>Frontend Developer</li>
+          <li><span>Location: </span>Remotely/On Site</li>
+          <li><span>E-mail: </span>mostafa123@gmail</li>
+        </ul>
+
+        <div class="about-btns">
+          <button>Download CV <i class="bi bi-download"></i></button>
+          <button>Hire Me <i class="bi bi-send-fill"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- services page -->
+    <div class="service-page section" id="services-page">
+      <h1 class="section-header">
+        Our Services
+
+        <div class="border-bottom"></div>
+      </h1>
+
+      <div class="services-cards">
+        <div class="service-card">
+          <h1 class="service-title">
+            <span><i class="bi bi-pencil-fill"></i></span>
+            UI/UX Design
+          </h1>
+          <p class="service-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+            adipisci mollitia quis necstatibus.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h1 class="service-title">
+            <span><i class="bi bi-code-slash"></i></span>
+            APP DEVELOPMENT
+          </h1>
+          <p class="service-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+            adipisci mollitia quis necstatibus.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h1 class="service-title">
+            <span><i class="bi bi-clipboard2-data"></i></span>
+            PRODUCT DESIGN
+          </h1>
+          <p class="service-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+            adipisci mollitia quis necstatibus.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h1 class="service-title">
+            <span><i class="bi bi-gear-wide-connected"></i></span>
+            UI/UX Design
+          </h1>
+          <p class="service-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+            adipisci mollitia quis necstatibus.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- portofolio page -->
+    <section class="portofolio-page section" id="portfolio-page">
+      <h1 class="section-header">
+        Our Portfolio
+
+        <div class="border-bottom"></div>
+      </h1>
+
+      <div class="projects-nav">
+        <button class="btn active" data-type="all">ALL</button>
+        <button class="btn" data-type="graphic">GRAPHIC</button>
+        <button class="btn" data-type="web">WEB DESIGN</button>
+        <button class="btn" data-type="branding">BRANDING</button>
+      </div>
+
+      <div class="projects"></div>
+    </section>
+    <!-- blog page -->
+    <section class="blog-page section" id="blog-page">
+      <h1 class="section-header">
+        Our Blog
+
+        <div class="border-bottom"></div>
+      </h1>
+
+      <div class="blog-cards">
+        <div class="blog-card">
+          <div class="blog-img">
+            <img
+              src="./assets/domenico-loia-hGV2TfOh0ns-unsplash.jpg"
+              alt="blog"
+            />
+          </div>
+
+          <div class="blog-desc">
+            <div class="date margin">23 November, 2015</div>
+            <h1 class="margin">Development Blog Post</h1>
+            <div class="desc margin">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consequuntur ea, quis magnam deserunt eius incidunt repellat
+              molestiae.
+            </div>
+            <button class="more margin">
+              Read More <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-img">
+            <iframe
+              width="350"
+              height="200"
+              src="https://www.youtube.com/embed/wIuVvCuiJhU?rel=0&modestbranding=1"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="blog-desc">
+            <div class="date margin">20 April, 2018</div>
+            <h1 class="margin">Web Design Blog Post</h1>
+            <div class="desc margin">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consequuntur ea, quis magnam deserunt eius incidunt repellat
+              molestiae.
+            </div>
+            <button class="more margin">
+              Read More <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-img">
+            <img
+              src="./assets/pexels-marta-klement-636760-1438081.jpg"
+              alt="blog"
+            />
+          </div>
+
+          <div class="blog-desc">
+            <div class="date margin">17 May, 2017</div>
+            <h1 class="margin">Full Width Blog Post</h1>
+            <div class="desc margin">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consequuntur ea, quis magnam deserunt eius incidunt repellat
+              molestiae.
+            </div>
+            <button class="more margin">
+              Read More <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
+    <section class="contact-page section" id="contact-page">
+      <h1 class="section-header">
+        Contact Us
+
+        <div class="border-bottom"></div>
+      </h1>
+
+      <form>
+        <div class="personal">
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+        </div>
+
+        <div class="subject">
+          <input type="text" placeholder="Subject" />
+          <textarea placeholder="Message Me"></textarea>
+        </div>
+
+        <button>Send Ur Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="social-links">
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-twitter"></i></a>
+        <a href=""><i class="bi bi-google"></i></a>
+        <a href=""><i class="bi bi-github"></i></a>
+      </div>
+
+      <p>Copy Right 2025 © By Mostafa Atef All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
